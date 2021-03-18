@@ -1,9 +1,9 @@
-import {Component, useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
 import { Container } from './styles';
 import api from '../../services/api';
-import {FoodModel} from "../../Types";
+import { FoodModel } from "../../Types";
 
 interface FoodProps {
     food: FoodModel,

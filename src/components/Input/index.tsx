@@ -2,7 +2,7 @@ import {
     useEffect,
     useRef,
     useState,
-    useCallback, ReactNode,
+    useCallback,
 } from 'react';
 
 import { useField } from '@unform/core';
@@ -21,7 +21,7 @@ const Input = ({ name, ...rest }: InputProps) => {
     const [isFocused, setIsFocused] = useState(false);
     const [isFilled, setIsFilled] = useState(false);
 
-    const { fieldName, defaultValue, registerField, error } = useField(name)
+    const { fieldName, defaultValue, registerField } = useField(name)
 
     const handleInputFocus = useCallback(() => {
         setIsFocused(true);
